@@ -40,8 +40,10 @@ class Generar:
     def consultar(self):
         try:
             connection = mysql.connector.connect(
-                host="localhost",
+                host="monorail.proxy.rlwy.net",
                 user="root",
+                port="30449",
+                password="RpIrXdsVKDEZCasxXTmPsJkNFdILQYRo",
                 database="financiera"
             )
             cursor = connection.cursor()

@@ -105,8 +105,10 @@ class Loggin:
         try:
             # Establece la conexión con la base de datos
             connection = mysql.connector.connect(
-                host="127.0.0.1",
+                host="monorail.proxy.rlwy.net",
                 user="root",
+                port="30449",
+                password="RpIrXdsVKDEZCasxXTmPsJkNFdILQYRo",
                 database="financiera"
             )
 

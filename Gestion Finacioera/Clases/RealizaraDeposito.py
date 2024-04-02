@@ -48,9 +48,11 @@ class RealizarDeposito:
     def verificar_tabla_deposito(self):
         try:
             connection = mysql.connector.connect(
-                host="127.0.0.1",
+                host="monorail.proxy.rlwy.net",
                 user="root",
-                database="dbUer"
+                port="30449",
+                password="RpIrXdsVKDEZCasxXTmPsJkNFdILQYRo",
+                database="financiera"
             )
             cursor = connection.cursor()
 
@@ -69,9 +71,11 @@ class RealizarDeposito:
         if numero_cuenta:
             try:
                 connection = mysql.connector.connect(
-                    host="127.0.0.1",
+                    host="monorail.proxy.rlwy.net",
                     user="root",
-                    database="prueba"
+                    port="30449",
+                    password="RpIrXdsVKDEZCasxXTmPsJkNFdILQYRo",
+                    database="financiera"
                 )
                 cursor = connection.cursor()
 
@@ -108,9 +112,11 @@ class RealizarDeposito:
 
         try:
             connection = mysql.connector.connect(
-                host="127.0.0.1",
+                host="monorail.proxy.rlwy.net",
                 user="root",
-                database="prueba"
+                port="30449",
+                password="RpIrXdsVKDEZCasxXTmPsJkNFdILQYRo",
+                database="financiera"
             )
             cursor = connection.cursor()
 

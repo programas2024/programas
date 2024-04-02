@@ -47,8 +47,10 @@ class RealizarRetiro:
     def verificar_tabla_retiros(self):
         try:
             connection = mysql.connector.connect(
-                host="127.0.0.1",
+                host="monorail.proxy.rlwy.net",
                 user="root",
+                port="30449",
+                password="RpIrXdsVKDEZCasxXTmPsJkNFdILQYRo",
                 database="financiera"
             )
             cursor = connection.cursor()
@@ -68,8 +70,10 @@ class RealizarRetiro:
         if numero_cuenta:
             try:
                 connection = mysql.connector.connect(
-                    host="127.0.0.1",
+                    host="monorail.proxy.rlwy.net",
                     user="root",
+                    port="30449",
+                    password="RpIrXdsVKDEZCasxXTmPsJkNFdILQYRo",
                     database="financiera"
                 )
                 cursor = connection.cursor()
@@ -107,8 +111,10 @@ class RealizarRetiro:
 
         try:
             connection = mysql.connector.connect(
-                host="127.0.0.1",
+                host="monorail.proxy.rlwy.net",
                 user="root",
+                port="30449",
+                password="RpIrXdsVKDEZCasxXTmPsJkNFdILQYRo",
                 database="financiera"
             )
             cursor = connection.cursor()
