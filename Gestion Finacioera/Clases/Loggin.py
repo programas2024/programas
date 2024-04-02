@@ -156,7 +156,7 @@ class Loggin:
         hora = ahora.strftime("%H:%M:%S")
         
         self.fecha_label.config(text="Fecha: " + fecha)
-        self.hora_label.config(text="Hora: " + hora)
+        self.hora_label.config(text="Hora:  " + hora)
 
         self.master.after(1000, self.actualizar_fecha_hora)
 
